@@ -1,0 +1,26 @@
+{
+  "name": "kaninstein/laravel-app-errors",
+  "description": "Consistent API error contract (HTTP semantic) with request_id and environment-aware debug payloads for Laravel.",
+  "license": "MIT",
+  "type": "library",
+  "require": {
+    "php": "^8.2",
+    "illuminate/support": "^12.0",
+    "illuminate/http": "^12.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kaninstein\\LaravelAppErrors\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Kaninstein\\LaravelAppErrors\\LaravelAppErrorsServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
+
