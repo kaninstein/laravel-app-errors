@@ -111,6 +111,7 @@ final readonly class AppError
             array_filter([
                 'X-Request-Id' => $this->requestId,
             ], static fn ($v) => $v !== null && $v !== ''),
+            JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES
         );
     }
 }
